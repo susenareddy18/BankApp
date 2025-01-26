@@ -49,6 +49,7 @@ public class AccountController {
 
 	public ResponseEntity<Object> addNewAccount(@RequestBody AccountInformation accountInformation,
 			@PathVariable Long customerNumber) {
+				System.out.println("New Branch Testing");
 
 		return bankingService.addNewAccount(accountInformation, customerNumber);
 	}

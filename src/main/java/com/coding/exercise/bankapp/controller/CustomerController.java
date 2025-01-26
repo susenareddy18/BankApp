@@ -36,6 +36,7 @@ public class CustomerController {
 			@ApiResponse(code = 500, message = "Internal Server Error") })
 
 	public List<CustomerDetails> getAllCustomers() {
+		System.out.println("New Customer Branch");
 
 		return bankingService.findAll();
 	}
